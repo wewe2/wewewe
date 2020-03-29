@@ -22,7 +22,11 @@
 
         <activity
             android:name=".demos.MapViewDemoActivity"
-            android:label="@string/map_view_demo_title"></activity>
+            android:label="@string/map_view_demo_title">  <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity
             android:name=".demos.MarkerDemoActivity"
             android:label="@string/marker_demo_title"></activity>
@@ -44,11 +48,7 @@
         <activity
             android:name=".MapsNaverActivity"
             android:label="@string/search_demo_title">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+      </activity>
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="6f504f9b73ad280372b2aff0036b6f32"/>
